@@ -26,7 +26,7 @@ export default function TelegramLoginButton(props: Props) {
 
         if (!script) {
             const script = document.createElement("script");
-            
+
             script.id = ID;
             script.src = WIDGET;
 

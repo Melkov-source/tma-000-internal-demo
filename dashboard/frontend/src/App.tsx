@@ -6,7 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 function NotFound() {
     return (<h1>404 — Страница не найдена</h1>);
-  }
+}
 
 export default function App() {
     return (

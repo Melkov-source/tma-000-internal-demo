@@ -1,4 +1,4 @@
-import { Navigate, useNavigate  } from "@solidjs/router";
+import { Navigate, useNavigate } from "@solidjs/router";
 import TelegramLoginButton from "./TelegramLoginButton";
 
 type TelegramUser = {
@@ -12,7 +12,7 @@ export default function Login() {
     let button_test: HTMLElement | null;
     const navigate = useNavigate();
 
-    if(localStorage.getItem("token") !== null) {
+    if (localStorage.getItem("token") !== null) {
         navigate("/dashboard", { replace: true })
         return;
     }
@@ -28,6 +28,6 @@ export default function Login() {
     }
 
     return (
-        <TelegramLoginButton botName="MeowWowLife_bot" onAuth={handleAuth} onLoaded={handleLoaded}/>
+        <TelegramLoginButton botName="MeowWowLife_bot" onAuth={handleAuth} onLoaded={handleLoaded} />
     );
 }
